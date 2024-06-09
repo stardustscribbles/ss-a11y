@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <style>
+            .footer-container {
+                /* margin-block: 2rem; */
+                /* position: sticky; */
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+                bottom: 0;
+                padding-block: 1rem;
+                background-color: white;
+
+                button {
+                    display: flex;
+                    width: fit-content;
+                }
+            }
+            .test-name-container {
+                display: inline-flex;
+                align-items: center;
+                gap: 12px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Record flow</h1>
+
+        <div id="flow-steps"></div>
+
+        <div class="footer-container">
+            <button id="start-recording-button">Start recording</button>
+            <div class="panel-test-save-buttons">
+                <input id="test-name-input" />
+                <button id="add-a11y-test-button">Add a11y test here</button>
+                <button id="save-flow-button">Save flow</button>
+            </div>
+        </div>
+
+        <script src="panel.js"></script>
+    </body>
+</html>
