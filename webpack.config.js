@@ -8,6 +8,7 @@ module.exports = {
         background: "./src/background.ts",
         content: "./src/content.ts",
         panel: "./src/panel.ts",
+        "panel-header": "./src/panel-header.ts",
         devtools: "./src/devtools.ts",
         styles: "./src/styles.scss",
     },

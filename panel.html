@@ -27,19 +27,35 @@
         </style>
     </head>
     <body>
-        <h1>Record flow</h1>
+        <div class="tabs-container">
+            <div class="tab-header automation-test-tab-header">Automation</div>
+            <div class="tab-header assisted-test-tab-header">Assisted</div>
+            <div class="tab-header recorder-test-tab-header selected">Record Test Flow</div>
+        </div>
+        <div class="tab-content automation-test-tab-container">
+            <h1>Automation</h1>
+        </div>
 
-        <div id="flow-steps"></div>
+        <div class="tab-content assisted-test-tab-container">
+            <h1>Assisted</h1>
+        </div>
 
-        <div class="footer-container">
-            <button id="start-recording-button">Start recording</button>
-            <div class="panel-test-save-buttons">
-                <input id="test-name-input" />
-                <button id="add-a11y-test-button">Add a11y test here</button>
-                <button id="save-flow-button">Save flow</button>
+        <div class="tab-content recorder-test-tab-container tab-content-visible">
+            <h1>Record flow</h1>
+
+            <div id="flow-steps"></div>
+
+            <div class="footer-container">
+                <button id="start-recording-button">Start recording</button>
+                <div class="panel-test-save-buttons">
+                    <input id="test-name-input" />
+                    <button id="add-a11y-test-button">Add a11y test here</button>
+                    <button id="save-flow-button">Save flow</button>
+                </div>
             </div>
         </div>
 
         <script src="panel.js"></script>
+        <script src="panel-header.js"></script>
     </body>
 </html>
